@@ -4,7 +4,7 @@ using namespace std;
 
 class Solution {
   private: 
-    void dfs(int node, vector<int> adj[], int vis[], vector<int> &ls) {
+    void dfs(int node, vector<int> adj[],vector<int> vis , vector<int> &ls) {
         vis[node] = 1; 
         ls.push_back(node); 
         // traverse all its neighbours
@@ -18,7 +18,8 @@ class Solution {
   public:
     // Function to return a list containing the DFS traversal of the graph.
     vector<int> dfsOfGraph(int V, vector<int> adj[]) {
-        int vis[V] = {0}; 
+        vector<int> vis(V, 0);
+
         int start = 0;
         // create a list to store dfs
         vector<int> ls; 
