@@ -58,17 +58,3 @@ class Solution
 	}
 };
 // Test the function
-int main() {
-    Solution sol;
-    vector<vector<int>> mat = {{0,0,0}, {0,1,0}, {1,1,1}};
-    vector<vector<int>> result = sol.updateMatrix(mat);
-
-    // Print the result
-    for (auto row : result) {
-        for (int cell : row) {
-            cout << cell << " ";
-        }
-        cout << endl;
-    }
-    return 0;
-}
