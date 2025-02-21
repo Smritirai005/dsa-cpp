@@ -7,7 +7,6 @@ private:
 	bool dfsCheck(int node, vector<int> adj[], vector<int> &vis, vector<int> &pathVis) {
 		vis[node] = 1;
 		pathVis[node] = 1;
-
 		// Traverse for adjacent nodes
 		for (auto it : adj[node]) {
 			// When the node is not visited
