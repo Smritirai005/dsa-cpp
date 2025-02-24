@@ -10,7 +10,7 @@ class Solution {
 public:
 	vector<int> eventualSafeNodes(int V, vector<int> adj[]) {
 		vector<int> adjRev[V];
-		int indegree[V] = {0};
+		vector<int> indegree(V, 0);
 		for (int i = 0; i < V; i++) {
 			// i -> it
 			// it -> i
